@@ -1,0 +1,13 @@
+{
+  "domain": "intuis",
+  "name": "Intuis Connect",
+  "codeowners": ["@maximeblanchard"],
+  "config_flow": true,
+  "documentation": "https://github.com/maximeblanchard/ha-intuis",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/maximeblanchard/ha-intuis/issues",
+  "requirements": [],
+  "version": "1.0.0",
+  "assets": ["logo.png", "logo@2x.png"]
+}

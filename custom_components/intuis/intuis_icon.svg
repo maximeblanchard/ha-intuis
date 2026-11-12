@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08B5FF"/>
+      <stop offset="100%" stop-color="#0048C8"/>
+    </linearGradient>
+
+    <!-- Warm Heat Wave Gradient -->
+    <linearGradient id="heat" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FF9100" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFD54F" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Energy Bolt Gradient -->
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Radiator White Gradient -->
+    <linearGradient id="radiator" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDF2F7"/>
+    </linearGradient>
+
+    <!-- Louvre Slat Gradient -->
+    <linearGradient id="slat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="22" y="22" width="636" height="636" rx="140" fill="url(#bg)"/>
+
+  <!-- Subtle Diagonal Shade -->
+  <path d="M22,520 L520,22 H658 V658 H22 Z" fill="#002D80" opacity="0.16"/>
+
+  <!-- Heat Waves rising from the Radiator -->
+  <g fill="none" stroke="url(#heat)" stroke-linecap="round">
+    <!-- Wave Left -->
+    <path d="M250,195 C235,165 260,135 245,105" stroke-width="14" opacity="0.85"/>
+    <!-- Wave Center (Taller) -->
+    <path d="M340,190 C320,155 355,120 335,80" stroke-width="16" opacity="0.95"/>
+    <!-- Wave Right -->
+    <path d="M430,195 C415,165 440,135 425,105" stroke-width="14" opacity="0.85"/>
+  </g>
+
+  <!-- Radiator Shadow -->
+  <rect x="155" y="475" width="370" height="20" rx="10" fill="#002D80" opacity="0.30"/>
+
+  <!-- Radiator Main Body -->
+  <rect x="135" y="215" width="410" height="260" rx="34" fill="url(#radiator)"/>
+
+  <!-- Top Air Outlet Grill -->
+  <rect x="165" y="235" width="350" height="10" rx="5" fill="#CBD5E1"/>
+
+  <!-- Radiator Horizontal Heating Slats / Louvres -->
+  <g fill="url(#slat)">
+    <rect x="165" y="260" width="350" height="18" rx="8"/>
+    <rect x="165" y="292" width="350" height="18" rx="8"/>
+    <rect x="165" y="324" width="350" height="18" rx="8"/>
+    <rect x="165" y="356" width="350" height="18" rx="8"/>
+    <rect x="165" y="388" width="350" height="18" rx="8"/>
+    <rect x="165" y="420" width="350" height="18" rx="8"/>
+  </g>
+
+  <!-- Radiator Feet/Brackets -->
+  <rect x="195" y="470" width="45" height="15" rx="6" fill="#CBD5E1"/>
+  <rect x="440" y="470" width="45" height="15" rx="6" fill="#CBD5E1"/>
+
+  <!-- Smart Status Indicator Light -->
+  <circle cx="505" cy="239" r="4.5" fill="#10B981"/>
+
+  <!-- Circular Energy Badge (Bottom Right) -->
+  <!-- Drop Shadow -->
+  <circle cx="522" cy="522" r="115" fill="#002B7A" opacity="0.28"/>
+  <!-- White Badge Background -->
+  <circle cx="522" cy="522" r="105" fill="#FFFFFF"/>
+  <!-- Subtle Inner Border -->
+  <circle cx="522" cy="522" r="105" fill="none" stroke="#E2E8F0" stroke-width="3"/>
+
+  <!-- Energy Lightning Bolt Icon -->
+  <path d="M526,440 L478,525 H520 L508,604 L572,504 H532 Z" fill="url(#bolt)"/>
+</svg>

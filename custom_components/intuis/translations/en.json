@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Intuis Connect (Netatmo)",
+        "description": "Enter your credentials from the Intuis Connect with Netatmo / Muller Intuitiv mobile application.",
+        "data": {
+          "email": "Account Email",
+          "password": "Password"
+        }
+      },
+      "home": {
+        "title": "Select Home",
+        "description": "Choose the home containing your connected radiators:",
+        "data": {
+          "home_id": "Home"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Intuis",
+        "description": "Your credentials have expired or changed. Please re-enter them.",
+        "data": {
+          "email": "Account Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid credentials (email or password incorrect).",
+      "cannot_connect": "Failed to connect to Intuis / Netatmo servers.",
+      "no_homes": "No home or connected radiators found on this account.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This Intuis home is already configured in Home Assistant.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Intuis Connect Options",
+        "description": "Adjust update frequency and Peak / Off-Peak hour timeframes.",
+        "data": {
+          "scan_interval": "Update interval (minutes)",
+          "hp_start": "Peak hours start (e.g. 6)",
+          "hp_end": "Peak hours end (e.g. 21)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "room_today_total": {
+        "name": "Today consumption"
+      },
+      "room_today_hp": {
+        "name": "Today consumption (Peak)"
+      },
+      "room_today_hc": {
+        "name": "Today consumption (Off-Peak)"
+      },
+      "room_yesterday_total": {
+        "name": "Yesterday consumption"
+      },
+      "room_yesterday_hp": {
+        "name": "Yesterday consumption (Peak)"
+      },
+      "room_yesterday_hc": {
+        "name": "Yesterday consumption (Off-Peak)"
+      },
+      "room_month_total": {
+        "name": "This month consumption"
+      },
+      "room_temperature": {
+        "name": "Temperature"
+      },
+      "room_setpoint": {
+        "name": "Setpoint"
+      },
+      "room_heating_power": {
+        "name": "Heating power"
+      },
+      "home_today_total": {
+        "name": "Total today consumption"
+      },
+      "home_today_hp": {
+        "name": "Total today consumption (Peak)"
+      },
+      "home_today_hc": {
+        "name": "Total today consumption (Off-Peak)"
+      },
+      "home_yesterday_total": {
+        "name": "Total yesterday consumption"
+      },
+      "home_month_total": {
+        "name": "Total this month consumption"
+      }
+    }
+  }
+}

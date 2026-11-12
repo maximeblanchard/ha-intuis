@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion Intuis Connect (Netatmo)",
+        "description": "Renseignez vos identifiants utilisés sur l'application mobile Intuis Connect with Netatmo / Muller Intuitiv.",
+        "data": {
+          "email": "Email du compte",
+          "password": "Mot de passe"
+        }
+      },
+      "home": {
+        "title": "Sélection du logement",
+        "description": "Choisissez le domicile contenant vos radiateurs connectés :",
+        "data": {
+          "home_id": "Logement"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Réauthentification Intuis",
+        "description": "Vos identifiants ont expiré ou ont été modifiés. Veuillez les renseigner à nouveau.",
+        "data": {
+          "email": "Email du compte",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Identifiants invalides (email ou mot de passe incorrect).",
+      "cannot_connect": "Impossible de joindre les serveurs Intuis / Netatmo.",
+      "no_homes": "Aucun domicile ou radiateur configuré sur ce compte.",
+      "unknown": "Une erreur inattendue est survenue."
+    },
+    "abort": {
+      "already_configured": "Ce logement Intuis est déjà configuré dans Home Assistant.",
+      "reauth_successful": "Réauthentification réussie avec succès."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options Intuis Connect",
+        "description": "Ajustez la fréquence de relevé et les plages horaires Heures Pleines / Heures Creuses.",
+        "data": {
+          "scan_interval": "Intervalle de mise à jour (minutes)",
+          "hp_start": "Heure de début Heures Pleines (ex: 6)",
+          "hp_end": "Heure de fin Heures Pleines (ex: 21)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "room_today_total": {
+        "name": "Consommation aujourd'hui"
+      },
+      "room_today_hp": {
+        "name": "Consommation aujourd'hui (HP)"
+      },
+      "room_today_hc": {
+        "name": "Consommation aujourd'hui (HC)"
+      },
+      "room_yesterday_total": {
+        "name": "Consommation hier"
+      },
+      "room_yesterday_hp": {
+        "name": "Consommation hier (HP)"
+      },
+      "room_yesterday_hc": {
+        "name": "Consommation hier (HC)"
+      },
+      "room_month_total": {
+        "name": "Consommation ce mois-ci"
+      },
+      "room_temperature": {
+        "name": "Température"
+      },
+      "room_setpoint": {
+        "name": "Consigne"
+      },
+      "room_heating_power": {
+        "name": "Puissance de chauffe"
+      },
+      "home_today_total": {
+        "name": "Consommation totale aujourd'hui"
+      },
+      "home_today_hp": {
+        "name": "Consommation totale aujourd'hui (HP)"
+      },
+      "home_today_hc": {
+        "name": "Consommation totale aujourd'hui (HC)"
+      },
+      "home_yesterday_total": {
+        "name": "Consommation totale hier"
+      },
+      "home_month_total": {
+        "name": "Consommation totale ce mois-ci"
+      }
+    }
+  }
+}
